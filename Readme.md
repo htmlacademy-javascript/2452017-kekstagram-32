@@ -1,7 +1,7 @@
 # Личный проект «Кекстаграм»
 
 * Студент: [Eldar Sarkynov](https://up.htmlacademy.ru/javascript/32/user/2452017).
-* Наставник: [Никита Сигов](https://htmlacademy.ru/profile/crazer)..
+* Наставник: [Никита Сигов](https://htmlacademy.ru/profile/crazer).
 
 ---
 
