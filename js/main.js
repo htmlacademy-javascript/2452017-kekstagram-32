@@ -1,2 +1,4 @@
 import { postList } from "./post-generate.js";
-console.log(postList);
+import { generateThumbnails } from "./drawing-thumbnails";
+
+generateThumbnails(postList());
