@@ -27,10 +27,10 @@ console.log(isPalindrome("Кекс"));
 
 // Функция "Делу - время"
 
-const checkWorkTime = function (Start, End, Meeting, timeMeeting) {
-  const workStart = Start.split(":");
-  const workEnd = End.split(":");
-  const meetingStart = Meeting.split(":");
+const checkWorkTime = function (start, end, meeting, timeMeeting) {
+  const workStart = start.split(":");
+  const workEnd = end.split(":");
+  const meetingStart = meeting.split(":");
 
   const totalStartMinutes =
     parseInt(workStart[0] * 60) + parseInt(workStart[1]);
