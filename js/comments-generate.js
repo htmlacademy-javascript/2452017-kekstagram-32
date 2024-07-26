@@ -2,7 +2,7 @@ import {
   getRandomInteger,
   generateUniqueRandomNumber,
   createIdGenerator,
-} from "./random-generate.js";
+} from "./util.js";
 
 import { NAMES, MESSAGES, DESCRIPTIONS } from "./data.js";
 

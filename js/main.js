@@ -1,2 +1,2 @@
-import { postList } from "./post-generate.js";
-console.log(postList);
+import { generateThumbnails } from "./drawing-thumbnails.js";
+import { renderFullscreenPicture } from "./user-modal.js";
