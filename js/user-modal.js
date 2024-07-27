@@ -1,9 +1,4 @@
-import {
-  getRandomInteger,
-  generateUniqueRandomNumber,
-  createIdGenerator,
-  isEscapeKey,
-} from "./util.js";
+import { isEscapeKey } from "./util.js";
 import { postList } from "./post-generate.js";
 
 const bigPicture = document.querySelector(".big-picture");
@@ -123,7 +118,8 @@ const renderFullscreenPicture = (post) => {
   openUserModal();
 };
 
-document.querySelector(".pictures").addEventListener("click", (evt) => {
+// Обработчик клика по миниатюре
+postList.addEventListener("click", (evt) => {
   if (evt.target.closest(".picture")) {
     const postId = parseInt(
       evt.target.closest(".picture").getAttribute("data-id"),

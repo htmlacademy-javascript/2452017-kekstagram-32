@@ -1,2 +1,5 @@
 import { generateThumbnails } from "./drawing-thumbnails.js";
-import { renderFullscreenPicture } from "./user-modal.js";
+import { postList } from "./post-generate.js";
+generateThumbnails(postList);
+import "./user-modal.js";
+

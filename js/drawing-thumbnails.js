@@ -1,3 +1,5 @@
+import { postList } from "./post-generate.js";
+
 const thumbNailsTemplate = document
   .querySelector("#picture")
   .content.querySelector(".picture");
@@ -23,5 +25,5 @@ const generateThumbnails = function (pictures) {
 
   container.append(fragment);
 };
-
+generateThumbnails(postList);
 export { generateThumbnails };

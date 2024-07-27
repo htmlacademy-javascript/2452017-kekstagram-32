@@ -24,6 +24,6 @@ const createPost = () => {
   };
 };
 
-const postList = () => Array.from({ length: POST_COUNT_RANGE }, createPost);
+const postList = Array.from({ length: POST_COUNT_RANGE }, createPost);
 
 export { postList };
