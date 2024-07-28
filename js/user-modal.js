@@ -13,7 +13,7 @@ const commentsTotalCount = bigPicture.querySelector(
 const commentsList = bigPicture.querySelector(".social__comments");
 const description = bigPicture.querySelector(".social__caption");
 const body = document.querySelector("body");
-const closeButton = bigPicture.querySelector(".big-picture__close");
+const closeButton = bigPicture.querySelector(".big-picture__cancel");
 const commentTemplate = document
   .querySelector("#comment")
   .content.querySelector(".social__comment");
@@ -52,7 +52,7 @@ const onDocumentKeydown = (evt) => {
 const drawingComments = (comments) => {
   const commentFragment = document.createDocumentFragment();
   commentsList.innerHTML = "";
-
+  console.log("коммент", comments);
   comments.forEach((comment, index) => {
     const commentItem = commentTemplate.cloneNode(true);
     commentItem.querySelector(".social__picture").src = comment.avatar;
@@ -118,15 +118,18 @@ const renderFullscreenPicture = (post) => {
   openUserModal();
 };
 
-// Обработчик клика по миниатюре
-postList.addEventListener("click", (evt) => {
+
+
+document.querySelector(".pictures").addEventListener("click", (evt) => {
+  console.log(evt);
+  console.log(evt.target.closest(".picture"));
   if (evt.target.closest(".picture")) {
     const postId = parseInt(
       evt.target.closest(".picture").getAttribute("data-id"),
       10
     );
     const post = postList.find((data) => data.id === postId);
-
+    console.log("пост id", postId);
     if (post) {
       evt.preventDefault();
       renderFullscreenPicture(post);
